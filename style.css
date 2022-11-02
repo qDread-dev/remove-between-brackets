@@ -1,6 +1,4 @@
 #main{
-    text-align: center;
-}
-#textarea{
-    text-align: center;
+    display: flex;
+    align-items: center;   
 }
