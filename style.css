@@ -1,5 +1,5 @@
 #main{
-    display: flex;
-    text-align:center;   
-    position: relative;
+    margin:auto;
+    width:50%;
+    padding:10px;
 }
