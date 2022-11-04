@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Current Problem: I am dumb and forgor a 0 💀 -->
+
+        <!-- Project Goal: Remove all text between 2 chars, ex '[' and ']' -->
         <!-- Imports JQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <title>Text Editor</title>
@@ -11,15 +14,16 @@
             <textarea id="textInput" cols="50" rows="10"></textarea><br>
             <button id="submit" onclick="convert()">Convert!</button><br>
             <textarea id="textOutput" cols="50" rows="10"></textarea><br>
+            
             <script>
-                const input = document.getElementById('textInput');
-                const output = document.getElementById('textOutput');
+                var input = document.getElementById('textInput');
+                var output = document.getElementById('textOutput');
                 var tempArry;
                 function convert(){
                     tempArry = $(input).val().split('\n');
                     // tempArry = tempArry.replace(/[.* ]/, '[]');
-                    for(var i; i < tempArry.length;i++){
-                        tempArry[i] = tempArry[i].replace(/[.*]/, '');
+                    for(var i = 0; i < tempArry.length;i++){
+                        tempArry[i] = tempArry[i].replace(/\[(.*?)\]/, '');
                     }
                     output.value = tempArry.join('\n');
                 }
