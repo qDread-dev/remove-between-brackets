@@ -5,6 +5,7 @@ textarea{
     background-color: #533483;
     border-color:#0F3460;
     color:#E94560;
+    border-radius:10px;
 }
 button{
     border-radius:100px;
