@@ -2,8 +2,8 @@ body{
     color:#16213E;
 }
 textarea{
-    color: #533483;
+    background-color: #533483;
     border-color:#0F3460;
     border-radius: 1000;
-    background-color:#E94560;
+    color:#E94560;
 }
