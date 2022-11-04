@@ -1,4 +1,4 @@
-html{
+body{
     background-color:#16213E;
 }
 textarea{
@@ -6,4 +6,7 @@ textarea{
     border-color:#0F3460;
     border-radius: 1000px;
     color:#E94560;
+}
+button{
+
 }
