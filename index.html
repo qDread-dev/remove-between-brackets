@@ -17,7 +17,8 @@
                 var tempArry;
                 function convert(){
                     tempArry = $(input).val().split('\n');
-                    output.value = tempArry.replace(/[.* ]/, '[]');
+                    tempArry = tempArry.replace(/[.* ]/, '[]');
+                    output.value = tempArry.join('\n');
                 }
             </script>
             <footer id="footer">
