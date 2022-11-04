@@ -16,8 +16,8 @@
                 const output = document.getElementById('textOutput');
                 var tempArry;
                 function convert(){
-                    tempArry = $(input).val().split('\n'); 
-                    output.value = input.value;
+                    tempArry = $(input).val().split('\n');
+                    output.value = tempArry.replace(/[.* ]/, '[]');
                 }
             </script>
             <footer id="footer">
