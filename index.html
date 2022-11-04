@@ -17,7 +17,10 @@
                 var tempArry;
                 function convert(){
                     tempArry = $(input).val().split('\n');
-                    // tempArry = tempArry.replace('[', '');
+                    // tempArry = tempArry.replace(/[.* ]/, '[]');
+                    for(var i; i < tempArry.length;i++){
+                        tempArry[i] = tempArry[i].replace(/[.*]/, '[]')
+                    }
                     output.value = tempArry.join('\n');
                 }
             </script>
