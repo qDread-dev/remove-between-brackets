@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Imports JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <title>Text Editor</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -12,7 +14,9 @@
             <script>
                 const input = document.getElementById('textInput');
                 const output = document.getElementById('textOutput');
+                var tempArry;
                 function convert(){
+                    tempArry = $(input).val().split('\n'); 
                     output.value = input.value;
                 }
             </script>
