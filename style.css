@@ -4,11 +4,12 @@
 /*light-orange:#ffd3b6;*/
 /*red-orange:#ffaaa5;*/
 /*light-red:#ff8b94;*/
-
+.html{
+    background-color:#a8e6cf;
+}
 #main{
     text-align:center;
-    color: #a8e6cf;
 }
 .body{
-    color:#a8e6cf;
+
 }
