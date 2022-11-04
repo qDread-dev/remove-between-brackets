@@ -7,12 +7,18 @@
     <body>
         <center>
             <textarea id="textInput" cols="50" rows="10"></textarea><br>
-                <button id="submit">Convert!</button><br>
-                <textarea id="textOutput" cols="50" rows="10"></textarea><br>
-                <p>debug text</p><br>
-                <footer id="footer">
-                    <p>footer text</p><br>
-                </footer>
+            <button id="submit" onclick="convert()">Convert!</button><br>
+            <textarea id="textOutput" cols="50" rows="10"></textarea><br>
+            <script>
+                const input = document.getElementById('textInput');
+                const output = document.getElementById('textOutput');
+                function convert(){
+                    output.value = input.value;
+                }
+            </script>
+            <footer id="footer">
+                <p>footer text</p><br>
+            </footer>
         </center>
     </body>
 </html>
